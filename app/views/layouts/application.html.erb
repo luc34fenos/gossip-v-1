@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GossipNew</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="css/styles1.css">
+  </head>
+  <div class="header">
+    <ul>
+      <li><%= link_to "Accueil", accueil_path %></li>
+      <li><%= link_to "a propos", propos_path %></li>
+      <li><%= link_to "contact", contact_path %></li>
+    </ul>
+  </div>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

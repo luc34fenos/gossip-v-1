@@ -1,0 +1,25 @@
+.gossip_name {
+	margin: 15px;
+	padding-left: 10px;
+	border: 3px double gold;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px;
+	transition: box-shadow 2s, border-radius 1s; 
+}
+
+.gossip_name:hover{
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px;
+}
+
+.tt {
+	text-decoration: none; 
+	color: blue; 
+	padding: 10px;
+}
+
+.tt:hover {
+	color: #A99;
+	border: 3px double red;
+	border-radius: 10px;
+}

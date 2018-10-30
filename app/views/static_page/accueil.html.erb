@@ -1,0 +1,21 @@
+
+<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	
+	<form action = "/" method="POST">
+		<span>votre nom: </span>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<input type="text" name="username">
+		<input type="submit"/> 
+	</form>
+
+	<h1 style="color: red; text-decoration: underline; text-align: center;">ALL GOSSIP: </h1>
+	<% @gossips.each do |gossip| %>
+	<div class = "gossip_name" id = "<%= gossip.id %>">
+		<p><span style="color: #EE8866; text-transform: capitalize; text-decoration: underline;">Author: </span><%= gossip.author %></p> 
+		<p><span style="color: #EE5566; text-transform: capitalize; text-decoration: underline;">Content: </span><%= gossip.content %></p> 
+		<p style = "text-align: right; padding-right: 10px;"><a class="tt" href="/change/<%= gossip.id %>">changer le gossip</a></p>
+	</div>
+	<% end %>
+
+	<p>creer un nouveau <%= link_to "gossip", new_path %></p>
+	<hr>

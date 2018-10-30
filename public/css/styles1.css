@@ -1,0 +1,28 @@
+body {
+	background-color: #666
+}	
+
+/*.hover {
+	background-color: darkblue;
+	border-radius: 15px;
+}*/
+
+.header {
+	border: 5px double yellow;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px gold;
+	padding: 0px;
+	margin: 5px;
+}
+
+ul {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 10px;
+}
+
+li {
+	margin: 10px;
+	padding-left: 4px;
+	list-style-type: none;
+}

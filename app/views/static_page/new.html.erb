@@ -1,0 +1,11 @@
+<form action="/new/" method="POST">
+	<fieldset>
+		<legend style="text-decoration: underline;">nouveau potin</legend>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<span>pseudo: </span>
+		<input type="text" name="author"><br><br>
+		<span>potin: </span>
+		<input type="text" name="content"><br><br>
+		<input type="submit" name="potin">
+	</fieldset>
+</form>

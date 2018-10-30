@@ -1,0 +1,13 @@
+		<p><span style="color: #EE8866; text-transform: capitalize; text-decoration: underline;">Author: </span><%= @gossips.author %></p> 
+		<p><span style="color: #EE5566; text-transform: capitalize; text-decoration: underline;">Content: </span><%= @gossips.content %></p> 
+<form action="/change/" method="POST">
+	<fieldset>
+		<legend>nouveau gossip</legend>
+		<input type="hidden" name="id" value = "<%= @gossips.id %>">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<input type="text" name="content"><br><br>
+		<span>effacer ce potin</span>
+		<input type="checkbox" name="effacer"><br><br>
+		<input type="submit" value="Changer">
+	</fieldset>
+</form>
